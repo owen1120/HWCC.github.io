@@ -1,0 +1,565 @@
+@media screen and (min-width: 0px) {
+    .main-xs, .main {
+      max-width: 100%;
+      padding: 1rem;
+    }
+    nav{
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .navbar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(252, 250, 242, 0.9);
+        z-index: 500;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+    }
+    .menu-toggle{
+        width: 1.6rem;
+        height: 1.6rem;
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .close-btn{
+        width: 1.6rem;
+        height: 1.6rem;
+        display: block;
+        margin-left: auto;
+        margin-right: 1.5rem;
+    }
+    .menu-line{
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url('../images/menu-line.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .close-line{
+        width: 2rem;
+        height: 2rem;
+        background-image: url('../images/close-line.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    #popup-menu:target{
+        opacity: 1;
+        visibility: visible;
+    }
+    .box-xs{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 576px) {
+    .main-sm, .main {
+      width: 100%;
+      padding: 1.5rem;
+    }
+    nav{
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .navbar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(252, 250, 242, 0.9);
+        z-index: 500;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+    }
+    .menu-toggle{
+        width: 1.6rem;
+        height: 1.6rem;
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .close-btn{
+        width: 1.6rem;
+        height: 1.6rem;
+        display: block;
+        margin-left: auto;
+        margin-right: 1.5rem;
+    }
+    .menu-line{
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url('../images/menu-line.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .close-line{
+        width: 2rem;
+        height: 2rem;
+        background-image: url('../images/close-line.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    #popup-menu:target{
+        opacity: 1;
+        visibility: visible;
+    }
+    .box-sm{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 768px) {
+    .main-md, .main {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    nav{
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .navbar{
+        position: relative;
+        background-color: #DAC9A6;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-toggle, .close-btn{
+        display: none;
+    }
+    .box-md{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 996px) {
+    .main-lg, .main {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    nav{
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .navbar{
+        position: relative;
+        background-color: #DAC9A6;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-toggle, .close-btn{
+        display: none;
+    }
+    .box-lg{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .main-xxl, .main {
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    nav{
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .navbar{
+        position: relative;
+        background-color: #DAC9A6;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-toggle, .close-btn{
+        display: none;
+    }
+    .box-xxl{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* image */
+.image-box-01{
+    height: 50vw;
+    background-image: url('../images/A-12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 0px) {
+    .image-box-02{
+        height: 100vw;
+        background-image: url('../images/A-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        overflow: hidden;
+    }
+    .image-box-03{
+        height: 100vw;
+        background-image: url('../images/A-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-04{
+        height: 100vw;
+        margin-top: 1.5rem;
+        background-image: url('../images/A-28.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-05{
+        height: 100vw;
+        background-image: url('../images/A-23.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-06{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-image: url('../images/A-19.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        overflow: hidden;
+    }
+    .image-box-06::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(252 , 250, 242, 0.5);
+        background-size: cover;
+    }
+    .map-01{
+        width: 100%;
+        height: 100vw;
+        background-image: url('../images/map.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 576px) {
+    .image-box-02{
+        height: 50vw;
+        background-image: url('../images/A-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        overflow: hidden;
+    }
+    .image-box-03{
+        height: 50vw;
+        background-image: url('../images/A-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-04{
+        height: 50vw;
+        margin-top: 1.5rem;
+        background-image: url('../images/A-28.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-05{
+        height: 100vw;
+        background-image: url('../images/A-23.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-06{
+        padding-top: 25%;
+        padding-bottom: 25%;
+        background-image: url('../images/A-19.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        overflow: hidden;
+    }
+    .image-box-06::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(252 , 250, 242, 0.5);
+        background-size: cover;
+    }
+    .image-box-06-xs{
+        display: none;
+    }
+    .map-01{
+        width: 100%;
+        height: 60vw;
+        background-image: url('../images/map.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 768px) {
+    .image-box-02{
+        height: 50vw;
+        background-image: url('../images/A-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        overflow: hidden;
+    }
+    .image-box-03{
+        height: 50vw;
+        background-image: url('../images/A-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-04{
+        height: 50vw;
+        margin-top: 1.5rem;
+        background-image: url('../images/A-28.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-05{
+        height: 100vw;
+        background-image: url('../images/A-23.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-06{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-image: url('../images/A-19.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        overflow: hidden;
+    }
+    .image-box-06::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(252 , 250, 242, 0.5);
+        background-size: cover;
+    }
+    .image-box-06-xs{
+        display: none;
+    }
+    .map-01{
+        width: 100%;
+        height: 40vw;
+        background-image: url('../images/map.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 996px) {
+    .image-box-02{
+        height: 25vw;
+        background-image: url('../images/A-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        overflow: hidden;
+    }
+    .image-box-03{
+        height: 25vw;
+        background-image: url('../images/A-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-04{
+        height: 25vw;
+        margin-top: 1.5rem;
+        background-image: url('../images/A-28.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-05{
+        height: 50vw;
+        background-image: url('../images/A-23.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-06{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-image: url('../images/A-19.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        overflow: hidden;
+    }
+    .image-box-06::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(252 , 250, 242, 0.5);
+        background-size: cover;
+    }
+    .image-box-06-xs{
+        display: none;
+    }
+    .map-01{
+        width: 100%;
+        height: 30vw;
+        background-image: url('../images/map.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .image-box-02{
+        height: 25vw;
+        background-image: url('../images/A-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        overflow: hidden;
+    }
+    .image-box-03{
+        height: 25vw;
+        background-image: url('../images/A-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-04{
+        height: 25vw;
+        margin-top: 1.5rem;
+        background-image: url('../images/A-28.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-05{
+        height: 50vw;
+        background-image: url('../images/A-23.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .image-box-06{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-image: url('../images/A-19.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        overflow: hidden;
+    }
+    .image-box-06::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(252 , 250, 242, 0.5);
+        background-size: cover;
+    }
+    .image-box-06-xs{
+        display: none;
+    }
+    .map-01{
+        width: 100%;
+        height: 25vw;
+        background-image: url('../images/map.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+}

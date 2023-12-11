@@ -1,0 +1,1069 @@
+/**
+*Base
+*Copyright 2023
+*Author OwenHe
+*Licensed
+*/
+/*----------*\
+    Content
+\*----------*/
+/**
+*Content
+*Core
+*global
+*Utility
+*/
+
+/* Core */
+/* Default style */
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(28, 28, 28, 0.8);
+    background-color: #FCFAF2;
+}
+a{
+    color: rgba(28, 28, 28, 0.8);
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* container */
+@media screen and (min-width: 0px) {
+    .container{
+        max-width: 100%;
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 576px) {
+    .container{
+        max-width: 100%;
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 100%;
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 996px) {
+    .container{
+        max-width: 100%;
+        display: grid;
+        place-items: center;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container{
+        max-width: 100%;
+        display: grid;
+        place-items: center;
+    }
+}
+
+/* heading style */
+h1,h2,h3,h4,h5,h6,p,.h1,.h2,.h3,.h4,.h5,.h6{
+    margin: 0;
+    padding: 0;
+}
+/* list style */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color */
+.color-primary{color: #D19826;}
+.color-black{color: #1C1C1C;}
+.color-white{color: #FCFAF2;}
+.bgc-primary{background-color: #FCFAF2;}
+.bgc-primary-op{background-color: rgba(252, 250, 242, 0.5);}
+.bgc-secondary{background-color: #DAC9A6;}
+
+/* Font */
+@media screen and (min-width: 0px) {
+    .ds-12-r-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .ds-16-r-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .ds-24-r-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .ds-48-r-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .ds-96-r-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .ds-12-s-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .ds-16-s-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .ds-24-s-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .ds-48-s-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .ds-96-s-xs{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .rm-12-r-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .rm-16-r-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .rm-24-r-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .rm-48-r-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .rm-96-r-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .rm-12-s-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .rm-16-s-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .rm-24-s-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .rm-48-s-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .rm-96-s-xs{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .nserif-12-r-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .nserif-16-r-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .nserif-24-r-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .nserif-48-r-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .nserif-96-r-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .nserif-12-s-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .nserif-16-s-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .nserif-24-s-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .nserif-48-s-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .nserif-96-s-xs{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 576px) {
+    .ds-12-r-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .ds-16-r-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .ds-24-r-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .ds-48-r-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .ds-96-r-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .ds-12-s-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .ds-16-s-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .ds-24-s-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .ds-48-s-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .ds-96-s-sm{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .rm-12-r-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .rm-16-r-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .rm-24-r-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .rm-48-r-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .rm-96-r-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .rm-12-s-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .rm-16-s-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .rm-24-s-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .rm-48-s-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .rm-96-s-sm{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .nserif-12-r-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .nserif-16-r-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .nserif-24-r-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .nserif-48-r-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .nserif-96-r-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .nserif-12-s-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .nserif-16-s-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .nserif-24-s-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .nserif-48-s-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .nserif-96-s-sm{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 768px) {
+    .ds-12-r-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .ds-16-r-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .ds-24-r-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .ds-48-r-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .ds-96-r-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .ds-12-s-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .ds-16-s-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .ds-24-s-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .ds-48-s-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .ds-96-s-md{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .rm-12-r-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .rm-16-r-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .rm-24-r-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .rm-48-r-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .rm-96-r-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .rm-12-s-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .rm-16-s-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .rm-24-s-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .rm-48-s-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .rm-96-s-md{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .nserif-12-r-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .nserif-16-r-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .nserif-24-r-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .nserif-48-r-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .nserif-96-r-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .nserif-12-s-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .nserif-16-s-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .nserif-24-s-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .nserif-48-s-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .nserif-96-s-md{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 996px) {
+    .ds-12-r-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .ds-16-r-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .ds-24-r-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .ds-48-r-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .ds-96-r-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .ds-12-s-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .ds-16-s-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .ds-24-s-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .ds-48-s-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .ds-96-s-lg{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .rm-12-r-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .rm-16-r-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .rm-24-r-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .rm-48-r-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .rm-96-r-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .rm-12-s-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .rm-16-s-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .rm-24-s-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .rm-48-s-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .rm-96-s-lg{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .nserif-12-r-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .nserif-16-r-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .nserif-24-r-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .nserif-48-r-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .nserif-96-r-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .nserif-12-s-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .nserif-16-s-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .nserif-24-s-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .nserif-48-s-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .nserif-96-s-lg{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .ds-12-r-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .ds-16-r-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .ds-24-r-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .ds-48-r-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .ds-96-r-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .ds-12-s-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .ds-16-s-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .ds-24-s-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .ds-48-s-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .ds-96-s-xxl{
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .rm-12-r-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .rm-16-r-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .rm-24-r-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .rm-48-r-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .rm-96-r-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .rm-12-s-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .rm-16-s-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .rm-24-s-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .rm-48-s-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .rm-96-s-xxl{
+        font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+    .nserif-12-r-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+    .nserif-16-r-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .nserif-24-r-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 400;
+    }
+    .nserif-48-r-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 400;
+    }
+    .nserif-96-r-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 400;
+    }
+    .nserif-12-s-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+    }
+    .nserif-16-s-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    .nserif-24-s-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .nserif-48-s-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        font-weight: 600;
+    }
+    .nserif-96-s-xxl{
+        font-family: 'Noto Serif TC', serif;
+        font-size: 6rem;
+        line-height: 9rem;
+        font-weight: 600;
+    }
+}
+
+/* Margin */
+.mlr-a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Padding */
+.pt-8{padding-top: 0.5rem;}
+.pt-12{padding-top: 0.8rem;}
+.pt-16{padding-top: 1rem;}
+.pt-24{padding-top: 1.5rem;}
+.pt-48{padding-top: 3rem;}
+.pt-96{padding-top: 6rem;}
+.pb-8{padding-bottom: 0.5rem;}
+.pb-12{padding-bottom: 0.8rem;}
+.pb-16{padding-bottom: 1rem;}
+.pb-24{padding-bottom: 1.5rem;}
+.pb-48{padding-bottom: 3rem;}
+.pb-96{padding-bottom: 6rem;}
+.pl-8{padding-left: 0.5rem;}
+.pl-12{padding-left: 0.8rem;}
+.pl-16{padding-left: 1rem;}
+.pl-24{padding-left: 1.5rem;}
+.pl-48{padding-left: 3rem;}
+.pl-96{padding-left: 6rem;}
+.pr-8{padding-right: 0.5rem;}
+.pr-12{padding-right: 0.8rem;}
+.pr-16{padding-right: 1rem;}
+.pr-24{padding-right: 1.5rem;}
+.pr-48{padding-right: 3rem;}
+.pr-96{padding-right: 6rem;}
+
+/* u-text */
+.u-text-r{
+    text-align: right;
+}
+.u-text-l{
+    text-align: left;
+}
+.u-text-c{
+    text-align: center;
+}
+.u-text-j{
+    text-align: justify;
+}
+
+/* border */
+.bor-t-1-s-b{border-top: 1px solid rgba(28, 28, 28, 0.8);}
+.bor-b-1-s-b{border-bottom: 1px solid rgba(28, 28, 28, 0.8);}
+.bor-r-1-s-b{border-right: 1px solid rgba(28, 28, 28, 0.8);}
+.bor-l-1-s-b{border-left: 1px solid rgba(28, 28, 28, 0.8);}
+.bor-t-2-s-b{border-top: 2px solid rgba(28, 28, 28, 0.8);}
+.bor-b-2-s-b{border-bottom: 2px solid rgba(28, 28, 28, 0.8);}
+.bor-r-2-s-b{border-right: 2px solid rgba(28, 28, 28, 0.8);}
+.bor-l-2-s-b{border-left: 2px solid rgba(28, 28, 28, 0.8);}
