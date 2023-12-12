@@ -297,6 +297,9 @@
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden;
+
+        transition: opacity 0.5s ease;
+        opacity: 1;
     }
 }
 @media screen and (min-width: 576px) {
@@ -363,6 +366,9 @@
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden;
+
+        transition: opacity 0.5s ease;
+        opacity: 1;
     }
 }
 @media screen and (min-width: 768px) {
@@ -429,6 +435,9 @@
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden;
+
+        transition: opacity 0.5s ease;
+        opacity: 1;
     }
 }
 @media screen and (min-width: 996px) {
@@ -495,6 +504,9 @@
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden;
+
+        transition: opacity 0.5s ease;
+        opacity: 1;
     }
 }
 @media screen and (min-width: 1440px) {
@@ -561,5 +573,18 @@
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden;
+
+        transition: opacity 0.5s ease;
+        opacity: 1;
+    }
+    .map-01:hover{
+        opacity: 0.5;
+    }
+    .hover-text {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .map-01:hover .hover-text{
+        opacity: 1;
     }
 }
