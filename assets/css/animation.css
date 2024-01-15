@@ -1,0 +1,30 @@
+.fade-in-5s{
+    opacity: 0;
+    animation-name: fade-in-5s;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-in-5s{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in-6s{
+    opacity: 0;
+    animation-name: fade-in-6s;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-in-6s{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
